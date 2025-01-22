@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:label="Acme Solutions"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity=""
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="io.flutter.embedding.android.NormalTheme"
+                android:resource="@style/NormalTheme" />
+        </activity>
+
+        <activity
+            android:name=".NotificationResponse"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert">
+
+
+            <!-- Add any intent filters if needed -->
+        </activity>
+        <activity
+            android:name=".IncomeNotificationResponse"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert">
+        </activity>
+
+
+        <receiver
+            android:name=".SmsReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".IncomeNotificationAction"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.tushop.app.YES_ACTION" />
+                <action android:name="com.tushop.app.NO_ACTION" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ExpenseNotificationAction" android:exported="true">
+            <intent-filter>
+                <action android:name="com.tushop.app.ACTION_NEEDS" />
+                <action android:name="com.tushop.app.ACTION_WANTS" />
+                <action android:name="com.tushop.app.ACTION_SAVINGS" />
+                <action android:name="com.tushop.app.ACTION_DEBT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".TransactionReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ADD_INCOME" />
+                <action android:name="ADD_EXPENSE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+    </application>
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT" />
+            <data android:mimeType="text/plain" />
+        </intent>
+    </queries>
+</manifest>

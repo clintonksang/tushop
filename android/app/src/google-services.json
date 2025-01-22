@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "284683212345",
+    "firebase_url": "https://nena-403504-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "nena-403504",
+    "storage_bucket": "nena-403504.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284683212345:android:72368d1da15c0b078bdfe8",
+        "android_client_info": {
+          "package_name": "com.tushop.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284683212345-bepl9e9kvkf8b9vvn5vb273lhg2n5iu5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tushop.app",
+            "certificate_hash": "2c63b93282f0b5a4c5b62ddc6ee84e7cb09b3a24"
+          }
+        },
+        {
+          "client_id": "284683212345-emhf4t5c17ovdp4b3i9l4vd2r88ause5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYO8ABxc3Y75LTwmxh25MrAutkioccaZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284683212345-emhf4t5c17ovdp4b3i9l4vd2r88ause5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "284683212345-evju881h0dnr060eqoji14f0mnmjf99k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tushop.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

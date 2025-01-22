@@ -1,0 +1,55 @@
+{
+    "home": {
+        "app_name": "Acme Solutions",
+        "continue": "continue",
+        "get_started": "get started",
+        "edit":"edit"
+    },
+  
+    "settings": {
+        "language": "language"
+    },
+    "login": {
+        "login": "login",
+        "enter_details": "enter your details",
+        "email": "email",
+        "password": "password",
+        "forgot": "forgot password?",
+        "register": "register",
+        "remember": "remember me",
+        "enter_email_or_phone": "Enter your email / phone number",
+        "first_name": "first name",
+        "last_name": "last name",
+        "enter_email": "enter your email",
+        "enter_password": "enter your password",
+        "confirm_password": "confirm your password",
+        "description": "Enter your details to sign in"
+    },
+    "register": {
+        "register": "register",
+        "enter_phone": "enter your phone number",
+        "name": "name",
+        "sign_up": "sign up",
+        "email": "email",
+        "password": "password",
+        "confirm": "confirm password",
+        "phone": "phone",
+        "description": "Enter your phone number",
+        "enter_details": "enter your details",
+        "first_name": "first name",
+        "hint_first_name": "Jane",
+        "hint_last_name": "Doe",
+        "hint_email": "janedoe@company.com",
+        "hint_password": "********",
+        "hint_confirm_password": "********",
+        "hint_phone": "700111222",
+        "last_name": "last name",
+        "enter_email": "enter your email",
+        "enter_password": "enter your password",
+        "confirm_password": "confirm your password",
+        "create_account": "create account",
+        "verify_phone": "verify phone number",
+        "please_wait": "Please wait as we create your account",
+        "enter_otp": "Enter a 6 digit verification code (OTP) sent to your phone number"
+    }
+}
